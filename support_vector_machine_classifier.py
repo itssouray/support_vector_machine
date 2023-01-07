@@ -61,7 +61,6 @@ class svm_classifier :
 
 
 
-  
   def predict(self,X):
     output = np.dot(X,self.w) - self.b
 
@@ -73,5 +72,7 @@ class svm_classifier :
 
     return y_hat
 
+
+# main --> 
 model = svm_classifier(learning_rate=0.001,no_of_iteration=1000,lambda_parameter=0.01)
 
